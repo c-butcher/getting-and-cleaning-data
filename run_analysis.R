@@ -63,7 +63,3 @@ data_summary <- data %>%
 # Then we save the file and we're done!
 savePath <- file.path("subject_averages.txt")
 write.table(data_summary, savePath)
-
-conn <- file("features.txt")
-writeLines(names(data_summary), conn, sep="\r\n")
-close(conn)
