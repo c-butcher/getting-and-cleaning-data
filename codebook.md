@@ -1,0 +1,104 @@
+## Codebook
+
+### Modifications to Column Names
+Special characters can make it difficult to read the names of the columns, and it also makes it difficult to import and use in other programming languages.
+- Removed the parenthesis "()"
+- Removed all dashes "-"
+
+Many columns had lowercase words mixed in with capitalized words, and it was difficult to distinguish when one word stopped, and another began. To fix this, those words had to be converted to have capital characters.
+- Capitalized the first character of mean, std, gravity and angle.
+
+Each column was prefixed with a 't' or a 'f', which stands for time and frequency. In order to make it more readable, the column names were changed to have the full 'Time' and 'Frequency' displayed. It is also displayed after the name of the device being measured: 
+- Changed tBodyAcc and tBodyGyro to BodyAccelerometerTime and BodyGyroscopeTime
+- Changed fBodyAcc and fBodyGryo to BodyAccelerometerFrequency and BodyGyroscopeFrequency
+
+```
+Subject
+Activity
+AvgBodyAccelerometerTimeMeanX
+AvgBodyAccelerometerTimeMeanY
+AvgBodyAccelerometerTimeMeanZ
+AvgBodyAccelerometerTimeStdX
+AvgBodyAccelerometerTimeStdY
+AvgBodyAccelerometerTimeStdZ
+AvgGravityAccelerometerTimeMeanX
+AvgGravityAccelerometerTimeMeanY
+AvgGravityAccelerometerTimeMeanZ
+AvgGravityAccelerometerTimeStdX
+AvgGravityAccelerometerTimeStdY
+AvgGravityAccelerometerTimeStdZ
+AvgBodyAccelerometerTimeJerkMeanX
+AvgBodyAccelerometerTimeJerkMeanY
+AvgBodyAccelerometerTimeJerkMeanZ
+AvgBodyAccelerometerTimeJerkStdX
+AvgBodyAccelerometerTimeJerkStdY
+AvgBodyAccelerometerTimeJerkStdZ
+AvgBodyGyroscopeTimeMeanX
+AvgBodyGyroscopeTimeMeanY
+AvgBodyGyroscopeTimeMeanZ
+AvgBodyGyroscopeTimeStdX
+AvgBodyGyroscopeTimeStdY
+AvgBodyGyroscopeTimeStdZ
+AvgBodyGyroscopeTimeJerkMeanX
+AvgBodyGyroscopeTimeJerkMeanY
+AvgBodyGyroscopeTimeJerkMeanZ
+AvgBodyGyroscopeTimeJerkStdX
+AvgBodyGyroscopeTimeJerkStdY
+AvgBodyGyroscopeTimeJerkStdZ
+AvgBodyAccelerometerTimeMagMean
+AvgBodyAccelerometerTimeMagStd
+AvgGravityAccelerometerTimeMagMean
+AvgGravityAccelerometerTimeMagStd
+AvgBodyAccelerometerTimeJerkMagMean
+AvgBodyAccelerometerTimeJerkMagStd
+AvgBodyGyroscopeTimeMagMean
+AvgBodyGyroscopeTimeMagStd
+AvgBodyGyroscopeTimeJerkMagMean
+AvgBodyGyroscopeTimeJerkMagStd
+AvgBodyAccelerometerFrequencyMeanX
+AvgBodyAccelerometerFrequencyMeanY
+AvgBodyAccelerometerFrequencyMeanZ
+AvgBodyAccelerometerFrequencyStdX
+AvgBodyAccelerometerFrequencyStdY
+AvgBodyAccelerometerFrequencyStdZ
+AvgBodyAccelerometerFrequencyMeanFreqX
+AvgBodyAccelerometerFrequencyMeanFreqY
+AvgBodyAccelerometerFrequencyMeanFreqZ
+AvgBodyAccelerometerFrequencyJerkMeanX
+AvgBodyAccelerometerFrequencyJerkMeanY
+AvgBodyAccelerometerFrequencyJerkMeanZ
+AvgBodyAccelerometerFrequencyJerkStdX
+AvgBodyAccelerometerFrequencyJerkStdY
+AvgBodyAccelerometerFrequencyJerkStdZ
+AvgBodyAccelerometerFrequencyJerkMeanFreqX
+AvgBodyAccelerometerFrequencyJerkMeanFreqY
+AvgBodyAccelerometerFrequencyJerkMeanFreqZ
+AvgBodyGyroscopeFrequencyMeanX
+AvgBodyGyroscopeFrequencyMeanY
+AvgBodyGyroscopeFrequencyMeanZ
+AvgBodyGyroscopeFrequencyStdX
+AvgBodyGyroscopeFrequencyStdY
+AvgBodyGyroscopeFrequencyStdZ
+AvgBodyGyroscopeFrequencyMeanFreqX
+AvgBodyGyroscopeFrequencyMeanFreqY
+AvgBodyGyroscopeFrequencyMeanFreqZ
+AvgBodyAccelerometerFrequencyMagMean
+AvgBodyAccelerometerFrequencyMagStd
+AvgBodyAccelerometerFrequencyMagMeanFreq
+AvgBodyAccelerometerFrequencyJerkMagMean
+AvgBodyAccelerometerFrequencyJerkMagStd
+AvgBodyAccelerometerFrequencyJerkMagMeanFreq
+AvgBodyGyroscopeFrequencyMagMean
+AvgBodyGyroscopeFrequencyMagStd
+AvgBodyGyroscopeFrequencyMagMeanFreq
+AvgBodyGyroscopeFrequencyJerkMagMean
+AvgBodyGyroscopeFrequencyJerkMagStd
+AvgBodyGyroscopeFrequencyJerkMagMeanFreq
+AvgAngleBodyAccelerometerTimeMeanGravity
+AvgAngleBodyAccelerometerTimeJerkMeanGravityMean
+AvgAngleBodyGyroscopeTimeMeanGravityMean
+AvgAngleBodyGyroscopeTimeJerkMeanGravityMean
+AvgAngleXGravityMean
+AvgAngleYGravityMean
+AvgAngleZGravityMean
+```
