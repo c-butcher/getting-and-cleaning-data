@@ -9,7 +9,7 @@ A video of the experiment including an example of the 6 recorded activities with
 The original data came from the [Human Activity Recognition Using Smart Phones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), but we downloaded the files from a mirror on [Cloudfront](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
 ## Extracted Data
-There were many files in the original archive, but we only needed to extract information from the following files:
+All of the files are downloaded by the `run_analysis.R` script, and they are stored in the data directory. There were many files in the original archive, but we only needed to extract information from the following files:
 
 | File                | Description                                                                                                                                                                                                                            |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
