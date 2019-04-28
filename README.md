@@ -8,15 +8,6 @@ This project is a demonstration of retrieving existing data, cleaning it up and 
 - Appropriately labels the data set with descriptive variable names.
 - Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-### Review Criteria
-Below you can see the elaborate criteria on which we are to be judged! You will notice that accuracy in our data calculations was not one of the criteria. Instead we are to be judged on whether we submitted the correct files, and that our documentation is well-written.
-
-- The submitted data set is tidy.
-- The Github repo contains the required scripts.
-- GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
-- The README that explains the analysis files is clear and understandable.
-- The work submitted for this project is the work of the student who submitted it.
-
 ### Instructions
 This analysis requires that you have the `curl`, `dplyr` and `tidr` libraries installed. If you do not have them installed, then you can run the following command:
 ```r
@@ -36,7 +27,7 @@ Before you run the `analysis.R` file, you will want to set your working director
 | subject_averages.txt | The finalized tidy data set which contains the average measurements for a subjects activity.                                                               |
 
 ### Helper Functions
-There are a few helper functions that are used to keep the code cleaner, and to avoid repeating function calls. These functions are in the `fetch.R` source file, and mostly retrieve data from the web or file system.
+There are a few helper functions that are used to keep the code cleaner and to avoid repeating function calls. These functions are in the `fetch.R` source file, and mostly retrieve data from the web or file system.
 
 | Function Name                    | Description                                                                                                                         |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
