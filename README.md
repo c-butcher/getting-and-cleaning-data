@@ -9,7 +9,7 @@ This project is a demonstration of retrieving existing data, cleaning it up and 
 - Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ### Review Criteria
-The one thing that I noticed when reading the review criteria for this project, was that accuracy wasn't part of the requirements. The teachers only want to make sure that we submit a tidy data set (reguardless of accuracy), and that we have the proper documentation. In real life, accurracy matters, so if you believe that the data-set has mistakes, then please contact me. Don't mark down my grade, as 'Accuracy' wasn't part of the requirements:
+Below you can see the elaborate criteria on which we are to be judged! You will notice that accuracy in our data calculations was not one of the criteria. Instead we are to be judged on whether we submitted the correct files, and that our documentation is well-written.
 
 - The submitted data set is tidy.
 - The Github repo contains the required scripts.
@@ -25,14 +25,13 @@ This analysis requires that you have the `curl`, `dplyr` and `tidr` libraries in
 
 If you are using RStudio, then you can open the project file by clicking `File -> Open Project...`, then opening the `Project.Rproj` for this project.
 
-Before you run the `analysis.R` file, you will want to set your working directory. This can be any directory of your choice, but we strongly recommend you use the same directory that the `Project.Rproj` file is located in.
+Before you run the `analysis.R` file, you will want to set your working directory. The directory must be the same folder that the `analysis.R` file is located in, otherwise it won't be able to load the `fetch.R` file.
 
 ### Project Files
 | File                 | Description                                                                                                                                                |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Project.Rproj        | You can open this file using RStudio. It allows us to share configurations for a project.                                                                  |
 | fetch.R              | Source code file that contains helper functions for loading data from both the web and filesystem.                                                         |
-| run_analysis.R       | Source code file that runs the data analysis. For more information about how it works, please check out the CodeBook.md, or read the comments in the file. |
+| run_analysis.R       | Source code file that runs the data analysis. For more information about how it works, please check out the codebook.md, or read the comments in the file. |
 | codebook.md          | A file containing a description of all the adjustments and operations carried out on the data set.                                                         |
 | subject_averages.txt | The finalized tidy data set which contains the average measurements for a subjects activity.                                                               |
 
