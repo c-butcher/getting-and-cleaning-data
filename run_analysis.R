@@ -62,4 +62,4 @@ data_summary <- data %>%
 
 # Then we save the file and we're done!
 savePath <- file.path("subject_averages.txt")
-write.table(data_summary, savePath)
+write.table(data_summary, savePath, row.names = FALSE)
