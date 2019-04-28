@@ -42,6 +42,19 @@ Our next step was to calculate the average for all measurements of a specific ac
 
 We then saved our new data set to the `subject_averages.txt` file. In order to verify that the numbers were correct, we extracted the original data for subject one, from when they were performing the walking activity (which was 90 observations). Then we manually calculated the average to make sure it was correct.
 
+### Activities
+The activities that were found in the y_train.txt and y_test.txt were numeric, and were later converted to their text descriptions found in the `activity_labels.txt` file. Below is a list that shows the relationship between those numbers and their description.
+
+| Number | Text |
+|--------|------|
+| 1 | WALKING |
+| 2 | WALKING_UPSTAIRS |
+| 3 | WALKING_DOWNSTAIRS |
+| 4 | SITTING |
+| 5 | STANDING |
+| 6 | LAYING |
+
+
 ### Extracted Features
 | Extracted From | Original Name | Final Name |
 |----------------|---------------|------------|
