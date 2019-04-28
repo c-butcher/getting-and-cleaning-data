@@ -21,7 +21,7 @@ Before you run the `analysis.R` file, you will want to set your working director
 ### Script Process
 The original data set had 561 measurement features (563  if you include the subject and activity identifiers). Our goal was to extract the mean and standard deviation features from the original data and create a new tidy data set that contained the average of every measurement for every activity that the subject performed.
 
-The first step was to load the measurements in the `X_train.txt` and `X_test.txt` files. Then assign the columns their names which were stored in the `features.txt` file. When the column names were loaded, they were also transformed them into human readable names using the following rules:
+The first step was to load the measurements in the `X_train.txt` and `X_test.txt` files. Then assign the columns their names which were stored in the `features.txt` file. When the column names were loaded, they were also transformed into human readable names using the following rules:
 
 - Capitalized the first character of mean, std, gravity and angle.
 - Changed tBodyAcc and tBodyGyro to BodyAccelerometerTime and BodyGyroscopeTime
