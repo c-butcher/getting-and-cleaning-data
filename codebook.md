@@ -22,28 +22,8 @@ All of the files are downloaded by the `run_analysis.R` script, and they are sto
 | features.txt        | The column names for the X_train and X_test data sets.                                                                                                                                                                                 |
 | activity_labels.txt | The values in the y_train and y_test were numeric, representing the type of activity the subject performed. This file contained the text descriptions of the activity, which matches up to those numeric values in y_train and y_test. |
 
-### Modifications to Data
-The original data set had 561 measurement features (563  if you include the subject and activity identifiers). Our goal was to extract the mean and standard deviation features from the original data and create a new tidy data set that contained the average of every measurement for every activity that the subject performed.
-
-The first step was to load the measurements in the `X_train.txt` and `X_test.txt` files. Then assign the columns their names which were stored in the `features.txt` file. When the column names were loaded, they were also transformed them into human readable names using the following rules:
-
-- Capitalized the first character of mean, std, gravity and angle.
-- Changed tBodyAcc and tBodyGyro to BodyAccelerometerTime and BodyGyroscopeTime
-- Changed fBodyAcc and fBodyGryo to BodyAccelerometerFrequency and BodyGyroscopeFrequency
-- Prepended Avg to the beginning of the column name.
-- Removed the parenthesis "()"
-- Removed all dashes "-"
-
-Once we had the measurements, the next step was to merge in the subject identifiers that were located in the `subject_train.txt` and `subject_test.txt` files. Then we merged in the activities that were located in the `y_train.txt` and `y_test.txt` files. The activities were numeric based, which was difficult to understand, so we transformed them from their numeric values to their text descriptions that were located in the `features.txt` file.
-
-At this point the data was completely merged, but we only needed the measurements that contained the mean and standard deviations. So we removed all the measurement columns except for the mean and standard deviations. Our first attempt to extract the specific columns failed, because some of the original column names had a capital Mean or Std in their labels, and other had lowercase. So we used a regex expression that looked for both (`[Mm]ean|[Ss]td`) leaving us with 88 columns (including the subject and activity columns).
-
-Our next step was to calculate the average for all measurements of a specific activity on a per subject basis. We did this by grouping the data by subject and then activity before running the mean function on the data set. Since there were 30 subjects in the study, and they eached performed 6 different activities, our calculations left us with 180 observations. (30 subjects * 6 activities == 180 observations).
-
-We then saved our new data set to the `subject_averages.txt` file. In order to verify that the numbers were correct, we extracted the original data for subject one, from when they were performing the walking activity (which was 90 observations). Then we manually calculated the average to make sure it was correct.
-
 ### Activities
-The activities that were found in the y_train.txt and y_test.txt were numeric, and were later converted to their text descriptions found in the `activity_labels.txt` file. Below is a list that shows the relationship between those numbers and their description.
+The activities that were found in the `y_train.txt` and `y_test.txt` were numeric, and were later converted to their text descriptions found in the `activity_labels.txt` file. Below is a list that shows the relationship between those numbers and their description.
 
 | Number | Text |
 |--------|------|
