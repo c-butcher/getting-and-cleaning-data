@@ -51,6 +51,7 @@ fetch.features <- function(features) {
   features <- gsub("fBodyGyro", "BodyGyroscopeFrequency", features)
   features <- gsub("fGravityAcc", "GravityAccelerometerFrequency", features)
   features <- gsub("fGravityGyro", "GravityGyroscopeFrequency", features)
+  features <- gsub("MeanGravityMean", "GravityMean", features)
   features <- gsub("\\-", "", features)
 
   features <- paste0("Avg", features)
